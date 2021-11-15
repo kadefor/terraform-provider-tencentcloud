@@ -818,6 +818,7 @@ func Provider() terraform.ResourceProvider {
 		},
 
 		ResourcesMap: map[string]*schema.Resource{
+			"tencentcloud_clb_instances_topic":                     resourceTencentCloudClbInstanceTopic(),
 			"tencentcloud_emr_instance":                            resourceTencentCloudEmrInstance(),
 			"tencentcloud_instance":                                resourceTencentCloudInstance(),
 			"tencentcloud_reserved_instance":                       resourceTencentCloudReservedInstance(),
